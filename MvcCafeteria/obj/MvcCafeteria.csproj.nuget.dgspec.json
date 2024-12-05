@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\Estudos - ADS\\2º Sem\\BACKEND\\MVC - Cafeteria\\WebAppCafeteria\\MvcCafeteria\\MvcCafeteria.csproj": {}
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\Estudos - ADS\\2º Sem\\ARQUITETURA DE SOFTWARE\\Unit_Tests\\MvcCafeteria\\MvcCafeteria.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\Estudos - ADS\\2º Sem\\BACKEND\\MVC - Cafeteria\\WebAppCafeteria\\MvcCafeteria\\MvcCafeteria.csproj": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\Estudos - ADS\\2º Sem\\ARQUITETURA DE SOFTWARE\\Unit_Tests\\MvcCafeteria\\MvcCafeteria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\Estudos - ADS\\2º Sem\\BACKEND\\MVC - Cafeteria\\WebAppCafeteria\\MvcCafeteria\\MvcCafeteria.csproj",
+        "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\Estudos - ADS\\2º Sem\\ARQUITETURA DE SOFTWARE\\Unit_Tests\\MvcCafeteria\\MvcCafeteria.csproj",
         "projectName": "MvcCafeteria",
-        "projectPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\Estudos - ADS\\2º Sem\\BACKEND\\MVC - Cafeteria\\WebAppCafeteria\\MvcCafeteria\\MvcCafeteria.csproj",
+        "projectPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\Estudos - ADS\\2º Sem\\ARQUITETURA DE SOFTWARE\\Unit_Tests\\MvcCafeteria\\MvcCafeteria.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\Estudos - ADS\\2º Sem\\BACKEND\\MVC - Cafeteria\\WebAppCafeteria\\MvcCafeteria\\obj\\",
+        "outputPath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\Estudos - ADS\\2º Sem\\ARQUITETURA DE SOFTWARE\\Unit_Tests\\MvcCafeteria\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config"

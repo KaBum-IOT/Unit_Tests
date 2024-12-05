@@ -17,71 +17,71 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MvcCafeteria
 build_property.RootNamespace = MvcCafeteria
-build_property.ProjectDir = C:\Users\gabri\OneDrive\Área de Trabalho\Estudos - ADS\2º Sem\BACKEND\MVC - Cafeteria\WebAppCafeteria\MvcCafeteria\
+build_property.ProjectDir = C:\Users\gabri\OneDrive\Área de Trabalho\Estudos - ADS\2º Sem\ARQUITETURA DE SOFTWARE\Unit_Tests\MvcCafeteria\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\gabri\OneDrive\Área de Trabalho\Estudos - ADS\2º Sem\BACKEND\MVC - Cafeteria\WebAppCafeteria\MvcCafeteria
+build_property.MSBuildProjectDirectory = C:\Users\gabri\OneDrive\Área de Trabalho\Estudos - ADS\2º Sem\ARQUITETURA DE SOFTWARE\Unit_Tests\MvcCafeteria
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/BACKEND/MVC - Cafeteria/WebAppCafeteria/MvcCafeteria/Views/Home/Index.cshtml]
+[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/ARQUITETURA DE SOFTWARE/Unit_Tests/MvcCafeteria/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/BACKEND/MVC - Cafeteria/WebAppCafeteria/MvcCafeteria/Views/Home/Privacy.cshtml]
+[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/ARQUITETURA DE SOFTWARE/Unit_Tests/MvcCafeteria/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/BACKEND/MVC - Cafeteria/WebAppCafeteria/MvcCafeteria/Views/Products/Create.cshtml]
+[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/ARQUITETURA DE SOFTWARE/Unit_Tests/MvcCafeteria/Views/Products/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/BACKEND/MVC - Cafeteria/WebAppCafeteria/MvcCafeteria/Views/Products/CreateOrder.cshtml]
+[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/ARQUITETURA DE SOFTWARE/Unit_Tests/MvcCafeteria/Views/Products/CreateOrder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlT3JkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/BACKEND/MVC - Cafeteria/WebAppCafeteria/MvcCafeteria/Views/Products/Delete.cshtml]
+[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/ARQUITETURA DE SOFTWARE/Unit_Tests/MvcCafeteria/Views/Products/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/BACKEND/MVC - Cafeteria/WebAppCafeteria/MvcCafeteria/Views/Products/Details.cshtml]
+[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/ARQUITETURA DE SOFTWARE/Unit_Tests/MvcCafeteria/Views/Products/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/BACKEND/MVC - Cafeteria/WebAppCafeteria/MvcCafeteria/Views/Products/Edit.cshtml]
+[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/ARQUITETURA DE SOFTWARE/Unit_Tests/MvcCafeteria/Views/Products/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/BACKEND/MVC - Cafeteria/WebAppCafeteria/MvcCafeteria/Views/Products/Index.cshtml]
+[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/ARQUITETURA DE SOFTWARE/Unit_Tests/MvcCafeteria/Views/Products/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/BACKEND/MVC - Cafeteria/WebAppCafeteria/MvcCafeteria/Views/Products/Orders.cshtml]
+[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/ARQUITETURA DE SOFTWARE/Unit_Tests/MvcCafeteria/Views/Products/Orders.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcT3JkZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/BACKEND/MVC - Cafeteria/WebAppCafeteria/MvcCafeteria/Views/Products/Welcome.cshtml]
+[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/ARQUITETURA DE SOFTWARE/Unit_Tests/MvcCafeteria/Views/Products/Welcome.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcV2VsY29tZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/BACKEND/MVC - Cafeteria/WebAppCafeteria/MvcCafeteria/Views/Shared/Error.cshtml]
+[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/ARQUITETURA DE SOFTWARE/Unit_Tests/MvcCafeteria/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/BACKEND/MVC - Cafeteria/WebAppCafeteria/MvcCafeteria/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/ARQUITETURA DE SOFTWARE/Unit_Tests/MvcCafeteria/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/BACKEND/MVC - Cafeteria/WebAppCafeteria/MvcCafeteria/Views/_ViewImports.cshtml]
+[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/ARQUITETURA DE SOFTWARE/Unit_Tests/MvcCafeteria/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/BACKEND/MVC - Cafeteria/WebAppCafeteria/MvcCafeteria/Views/_ViewStart.cshtml]
+[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/ARQUITETURA DE SOFTWARE/Unit_Tests/MvcCafeteria/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/BACKEND/MVC - Cafeteria/WebAppCafeteria/MvcCafeteria/Views/Shared/_Layout.cshtml]
+[C:/Users/gabri/OneDrive/Área de Trabalho/Estudos - ADS/2º Sem/ARQUITETURA DE SOFTWARE/Unit_Tests/MvcCafeteria/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-2oh0241xem
