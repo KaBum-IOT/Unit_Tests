@@ -14,6 +14,8 @@ namespace Cafeteria.Data
         {
         }
 
-        public DbSet<MvcCafeteria.Models.Product> Product { get; set; } = default!;
+        public DbSet<Product> Product { get; set; } = default!;
+        public DbSet<Order> Order { get; set; } = default!;
+        public DbSet<OrderItem> OrderItem { get; set; } = default!;
     }
 }
