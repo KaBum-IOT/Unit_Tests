@@ -44,9 +44,28 @@ namespace MvcCafeteria.Controllers
         }
 
         // GET: Order/Create
-        public IActionResult Create()
-        {
-            return View();
+        public async Task<IActionResult> Create()
+        {   
+            // Recupera todos os produtos do BD
+            var products = await _context.Product.ToListAsync();
+            // Seleciona apenas os produtos cujo atributo Quantidade é diferente de zero
+            products = products.Where(p => p.Quantity!=0).ToList();
+
+                // Instancia uma nova ViewModel
+            OrderCreateViewModel viewModel = new OrderCreateViewModel
+            {
+                ProductsSelectList = products.Select(p => new SelectListItem 
+                {
+                    Value = p.Id.ToString(),
+                    Text = p.Name
+                }),
+                Products = products
+            };
+
+                // Limpa os dados temporários
+            TempData.Clear();
+            
+            return View(viewModel);
         }
 
         // POST: Order/Create
