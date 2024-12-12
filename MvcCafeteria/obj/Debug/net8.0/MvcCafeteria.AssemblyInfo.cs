@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MvcCafeteria")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d663b1fbcdacea472bb9cdf2ca9403e70ae4d1d3")]
 [assembly: System.Reflection.AssemblyProductAttribute("MvcCafeteria")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MvcCafeteria")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

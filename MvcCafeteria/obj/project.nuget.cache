@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hm+oO/PGpfY=",
+  "dgSpecHash": "Y3MY/IyNFGw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\Estudos - ADS\\2º Sem\\BACKEND\\MVC - Cafeteria\\WebAppCafeteria\\MvcCafeteria\\MvcCafeteria.csproj",
+  "projectFilePath": "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\Estudos - ADS\\2º Sem\\ARQUITETURA DE SOFTWARE\\Unit_Tests\\MvcCafeteria\\MvcCafeteria.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gabri\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
