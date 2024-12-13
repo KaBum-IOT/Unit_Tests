@@ -119,7 +119,7 @@ namespace MvcCafeteria.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Name,Quantity,Category,Price")] Product product)
         {
-            if(!ModelState.IsValid || product.Quantity <= 0 || product.Name == null || product.Id < 0)
+            if(!ModelState.IsValid || product.Quantity <= 0 || product.Name == null || product.Id < 0 || product.Category == null || product.Price < 0)
                 return View(product);
             else
             {

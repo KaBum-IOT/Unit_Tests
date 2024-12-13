@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Cafeteria.Data;
 using MvcCafeteria.Models;
+using Microsoft.IdentityModel.Tokens;
 
 namespace MvcCafeteria.Controllers
 {
@@ -40,7 +41,23 @@ namespace MvcCafeteria.Controllers
                 return NotFound();
             }
 
-            return View(order);
+            var orderItem = await _context.OrderItem.Where(o => o.IdOrder == id).ToListAsync();
+            var products = new Dictionary<Product, int>();
+
+            foreach(var item in orderItem)
+            {
+                var productItem = await _context.Product.FindAsync(item.IdProduct);
+                if(productItem != null)
+                    products[productItem] = item.Quantity;
+            }
+
+            OrderDetailsViewModel details = new OrderDetailsViewModel
+            {
+                Order = order,
+                Products = products
+            };
+
+            return View(details);
         }
 
         // GET: Order/Create
@@ -51,7 +68,7 @@ namespace MvcCafeteria.Controllers
             // Seleciona apenas os produtos cujo atributo Quantidade é diferente de zero
             products = products.Where(p => p.Quantity!=0).ToList();
 
-                // Instancia uma nova ViewModel
+            // Instancia uma nova ViewModel
             OrderCreateViewModel viewModel = new OrderCreateViewModel
             {
                 ProductsSelectList = products.Select(p => new SelectListItem 
@@ -62,10 +79,79 @@ namespace MvcCafeteria.Controllers
                 Products = products
             };
 
-                // Limpa os dados temporários
+            // Limpa os dados temporários
             TempData.Clear();
             
             return View(viewModel);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateOrder(OrderCreateViewModel viewModel)
+        {
+            // Se o usuário não selecionou nenhum produto e clicou no botão "Finalize Order"
+            // então será redirecionado para Index e nada acontece
+            if(TempData.IsNullOrEmpty())
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+            // Instancia um novo pedido
+            Order order = new Order
+            {
+                TimeStamp = DateTime.Now,
+                TotalPrice = viewModel.TotalPrice
+            };
+
+            // Persiste o pedido no Banco de dados
+            _context.Order.Add(order);
+            await _context.SaveChangesAsync();
+            
+            // Recupera o pedido que acabou de ser salvo para ter acesso ao seu ID
+            Order ?o = await _context.Order.FindAsync(order.Id);
+
+            // Retorna um erro caso a consulta ao BD falhe
+            if(o==null)
+                return BadRequest();
+
+            // Cria uma lista de OrderItem
+            List<OrderItem>orderItems = new List<OrderItem>();
+            
+            // Instancia um OrderItem para cada elemento salvo em TempData
+            foreach(string key in TempData.Keys)
+            {
+
+                string? stringValue = TempData[key]?.ToString();
+                
+                if(stringValue==null)
+                    return BadRequest();
+
+                OrderItem orderItem = new OrderItem           
+                {
+                    IdOrder = o.Id,
+                    IdProduct = int.Parse(key),
+                    Quantity = int.Parse(stringValue)
+                };
+
+                // Adiociona o OrderItem criado ao DbContext
+                _context.OrderItem.Add(orderItem);
+                orderItems.Add(orderItem);
+
+                // Qtualiza a quantidade do produto consumido no pedido
+                Product? productUpdate = await _context.Product.FindAsync(int.Parse(key));
+                
+                if(productUpdate==null)
+                    return NotFound();
+                
+                productUpdate.Quantity -= int.Parse(stringValue);
+
+                _context.Product.Update(productUpdate);
+            }
+
+            // Persiste todas as alterações realizadas no banco de dados
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
         }
 
         // POST: Order/Create
@@ -84,6 +170,59 @@ namespace MvcCafeteria.Controllers
             return View(order);
         }
 
+        // POST: Order/Create
+        // Verifica se o produto selecionado tem a quantidade certa e, se sim, salva ele pra próxima consulta
+        [HttpPost]
+        public async Task<ActionResult> AddProduct (OrderCreateViewModel viewModel)
+        { 
+            // Recupera todos os produtos do BD
+            var products = await _context.Product.ToListAsync();
+            // Seleciona apenas os produtos cujo atributo Quantidade é diferente de zero
+            products = products.Where(p => p.Quantity!=0).ToList();
+            
+            // Valida se a consulta ao banco teve sucesso
+            if(products==null)
+                return NotFound();
+
+            // Valida se o produto selecionado pelo usuário no dropdown foi encontrado no BD
+            Product? stockCheck = products.Find(p=>p.Id==viewModel.SelectedProductId);
+            if(stockCheck==null)
+                return NotFound();
+            
+            // Verifica se a quantidade solicitada no produto e suficiente no estoque
+            if(stockCheck.Quantity >= viewModel.Quantity)
+            {
+                TempData[viewModel.SelectedProductId.ToString()]=viewModel.Quantity;
+            }else
+            {
+                viewModel.Message = "There are not enough products in stock.";
+            }
+            
+            viewModel.TotalPrice = 0;
+
+            // Salva os dados do produto selecionado em TempData para a próxima seção
+            foreach (var key in TempData.Keys)
+            {
+                TempData.Keep(key);
+                
+                Product ?p = products.Find(p => p.Id == int.Parse(key));
+                string ?q = TempData[key]?.ToString();
+                if (p != null && q!=null)
+                    viewModel.TotalPrice += p.Price * int.Parse(q);
+            }
+
+            // Reabastece a lista de produtos para o dropdown
+            viewModel.ProductsSelectList = products.Select(p => new SelectListItem 
+                {
+                    Value = p.Id.ToString(),
+                    Text = p.Name
+                });
+            viewModel.Products = products;
+            
+            // Retorna a ViewModel para View/Order/Create
+            return View("Create",viewModel);
+        }
+
         // GET: Order/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -97,6 +236,7 @@ namespace MvcCafeteria.Controllers
             {
                 return NotFound();
             }
+
             return View(order);
         }
 

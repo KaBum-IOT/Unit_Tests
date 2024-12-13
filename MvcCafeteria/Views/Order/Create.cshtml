@@ -74,7 +74,7 @@
             <span id="totalPrice">@Model.TotalPrice.ToString("C")</span>
         </div>
 
-        <form asp-action="Create" method="post">
+        <form asp-action="CreateOrder" method="post">
             <input type="hidden" name="TotalPrice" value="@Model.TotalPrice" />
             <br>
             <div class="form-group">

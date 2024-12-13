@@ -1,6 +1,11 @@
+using System.Globalization;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using Cafeteria.Data;
+
+var cultureInfo = new CultureInfo("en-US");
+CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
+
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<CafeteriaContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("CafeteriaContext") ?? throw new InvalidOperationException("Connection string 'CafeteriaContext' not found.")));
